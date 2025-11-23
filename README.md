@@ -83,5 +83,4 @@ int main() {
 - Evite chamadas repetitivas em sequencia; aguarde a sincronizacao concluir e utilize um temporizador para pedir novos horarios quando necessario.
 - Sempre verifique o retorno do metodo e implemente uma logica de repeticao ou fallback caso o servidor nao responda.
 
-## Licenca
-Defina aqui a licenca aplicavel ao projeto (por exemplo, MIT, Apache-2.0 ou outra conforme sua necessidade).
+
