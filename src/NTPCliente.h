@@ -26,4 +26,6 @@ private:
     volatile time_t resultadoUnix;
 
     void enviarRequisicaoNTP();
+    void pausarExecucaoPorMilissegundos(uint32_t tempo_ms);
+    void executarVarreduraRede();
 };

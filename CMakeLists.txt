@@ -12,7 +12,15 @@ target_include_directories(NTPCliente
 
 )
 
-target_link_libraries(NTPCliente
-    PUBLIC
-        Wifi
-)
+if(TARGET FreeRTOS)
+    target_link_libraries(NTPCliente
+        PUBLIC
+            Wifi
+            FreeRTOS
+    )
+else()
+     target_link_libraries(NTPCliente
+        PUBLIC
+            Wifi          
+    )
+endif()
