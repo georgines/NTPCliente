@@ -56,7 +56,7 @@ time_t NTPCliente::obterTimestampUnix()
     bool consulta_em_andamento = status_dns == ERR_INPROGRESS;
     if (!dns_resolvido_imediatamente && !consulta_em_andamento)
     {
-        printf("Falha DNS NTP\n");
+        // printf("Falha DNS NTP\n");
         return 0;
     }
 
@@ -70,7 +70,7 @@ time_t NTPCliente::obterTimestampUnix()
 
     if (!dnsResolvido)
     {
-        printf("Falha DNS NTP\n");
+        // printf("Falha DNS NTP\n");
         return 0;
     }
 
@@ -86,7 +86,7 @@ time_t NTPCliente::obterTimestampUnix()
 
     if (!pacoteRecebido)
     {
-        printf("Falha: nenhuma resposta NTP\n");
+        // printf("Falha: nenhuma resposta NTP\n");
         return 0;
     }
 
